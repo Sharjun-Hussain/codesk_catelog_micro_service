@@ -1,0 +1,40 @@
+{
+  "name": "codesk-catalog-service",
+  "version": "1.0.0",
+  "description": "CoDesk Centralized Product Master Catalog and Barcode Intelligence Microservice",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "db:migrate": "sequelize-cli db:migrate",
+    "db:migrate:undo": "sequelize-cli db:migrate:undo",
+    "db:migrate:status": "sequelize-cli db:migrate:status"
+  },
+  "keywords": [
+    "codesk",
+    "pos",
+    "barcode",
+    "master-catalog",
+    "product-intelligence",
+    "gtin",
+    "ean"
+  ],
+  "author": "CoDesk",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.9",
+    "compression": "^1.7.5",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^5.2.1",
+    "helmet": "^8.0.0",
+    "morgan": "^1.10.0",
+    "mysql2": "^3.11.5",
+    "rate-limiter-flexible": "^5.0.3",
+    "sequelize": "^6.37.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9",
+    "sequelize-cli": "^6.6.2"
+  }
+}

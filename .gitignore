@@ -1,0 +1,25 @@
+# Dependencies
+node_modules/
+
+# Environment configurations (NEVER commit secrets or .env files)
+.env
+.env.*
+!.env.example
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+
+# OS / Editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# Build & Coverage
+dist/
+coverage/

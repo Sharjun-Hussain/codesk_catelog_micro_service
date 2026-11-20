@@ -1,0 +1,19 @@
+services:
+  catalog-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: codesk_catalog_service
+    restart: always
+    env_file:
+      - .env
+    environment:
+      - TZ=Asia/Colombo
+      - NODE_ENV=production
+      - PORT=5005
+    networks:
+      - inzeedo_network
+
+networks:
+  inzeedo_network:
+    external: true
